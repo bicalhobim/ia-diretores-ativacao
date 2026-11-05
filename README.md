@@ -1,38 +1,51 @@
-# IA para Diretores — kit de ativação
+# IA para Diretores
 
-Kit privado para iniciar **um piloto supervisionado de um contrato** no ChatGPT/Codex. Contém instruções, papéis, prompts, um exemplo inteiramente fictício e critérios de validação. Não instala programas, conecta contas ou executa agentes sozinho.
+**Um contrato. Fontes rastreáveis. Decisões sob controle do diretor.**
+
+![Diagrama conceitual IA para Diretores: fontes, organização, Dot e Codex, papéis de análise, resultados e aprovação do diretor](assets/capa-ia-diretores.png)
+
+> **Arquitetura proposta.** A imagem mostra a direção do produto, não conexões já instaladas. O piloto começa com arquivos fictícios e evolui para um contrato real somente após autorização de dados, acessos e responsáveis.
+
+Este kit privado reúne o roteiro de ativação no Windows, instruções para Codex, papéis de análise, prompts reutilizáveis e um exercício seguro. Seu resultado pretendido é um **quadro semanal de uma página**: fato, fonte, restrição, impacto, responsável, prazo e próxima ação. Francisco revisa os fatos e aprova qualquer decisão ou comunicação antes da execução.
 
 ## Comece por aqui
 
-1. Leia [Ativação no Windows](docs/01-ativacao-windows.md) e abra esta pasta no Codex.
-2. Leia [Segurança e permissões](docs/02-seguranca.md) antes de selecionar dados reais.
-3. Execute o [primeiro exercício](docs/03-primeiro-piloto.md) somente com os arquivos de `exemplos/`.
-4. Use o [prompt de início](prompts/01-inicio.md) e confira a saída contra o [modelo de quadro](modelos/quadro-semanal.md).
-5. Só depois escolha, com o responsável, um contrato e quais fontes podem ser lidas. Consulte a [matriz de integrações](docs/04-integracoes.md).
+1. Leia [Ativação no Windows](docs/01-ativacao-windows.md) e [Segurança e permissões](docs/02-seguranca.md).
+2. Abra esta pasta no Codex e confira as [instruções do projeto](AGENTS.md).
+3. Faça o [exercício com dados fictícios](docs/03-primeiro-piloto.md), começando pelo [prompt de início](prompts/01-inicio.md).
+4. Revise o resultado com o [modelo de quadro](modelos/quadro-semanal.md) e os [critérios de validação](docs/05-validacao.md).
+5. Só então escolha um contrato e confira as permissões na [matriz de integrações](docs/04-integracoes.md).
 
-## O que deve sair do piloto
-
-Um quadro semanal de uma página com fato, fonte, restrição, impacto, responsável, prazo e próxima ação. Toda afirmação vem com origem verificável. Envio de mensagens, atualização de sistemas e criação de compromissos exigem revisão e autorização explícita da pessoa responsável.
-
-Os arquivos em `agentes/` definem **papéis de análise**. Eles não provam que há vários agentes autônomos rodando, nem são configuração de uma integração. Na primeira rodada, o Codex pode executar os papéis em sequência, sob supervisão.
-
-## Estado atual
-
-| Item | Estado deste repositório |
+| No kit | Finalidade |
 | --- | --- |
-| Instruções e prompts | Preparados, sem dados reais |
-| Exemplo | Fictício e verificável manualmente |
-| Google (Drive/Gmail/Agenda) | Acesso não configurado nem testado neste kit |
-| WhatsApp | Acesso não configurado nem testado neste kit |
-| Dot/computador | Demonstração depende da disponibilidade e permissão na conta do usuário |
-| Operação automática | Não implementada |
+| [Quatro papéis](agentes/01-leitor.md) | Ler fontes, analisar restrições, redigir e revisar em sequência supervisionada |
+| [Prompts](prompts/01-inicio.md) | Repetir o fluxo com saídas consistentes |
+| [Exemplo fictício](exemplos/contrato-ficticio.md) | Ensaiar sem documentos de clientes ou contas conectadas |
+| [Histórico e fontes](docs/06-historico-e-fontes.md) | Distinguir o que foi apresentado, enviado, desenvolvido e ainda não comprovado |
+| [Relatório de trabalho](docs/07-relatorio-de-trabalho.md) | Revisar o avanço e as pendências antes de tratar a entrega como concluída |
 
-## Fontes oficiais para a instalação
+## Estado em 05/11/2026
 
-- [ChatGPT desktop app para Windows](https://learn.chatgpt.com/docs/windows/windows-app)
-- [Primeiros passos](https://learn.chatgpt.com/docs/quickstart)
-- [Instruções de projeto com AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md)
+| Componente | Estado verificável |
+| --- | --- |
+| Roteiro, prompts e exemplo | Preparados e revisados localmente; o exercício ainda depende de execução com o usuário |
+| Papéis de análise | Definidos como instruções; não são agentes autônomos implantados |
+| Arquivos locais fictícios | Prontos para ensaio, sem acesso a contas |
+| Google Drive, Gmail e Agenda | Não configurados nem testados na conta de Francisco |
+| WhatsApp | Não configurado nem testado; mensagem copiada manualmente deve ser identificada como tal |
+| Dot e operação de telas | Dependem de disponibilidade e permissões no ambiente de Francisco |
+| Contrato real e quadro aprovado | A escolher e validar com Francisco |
 
-## Manutenção
+O [guia de validação](docs/05-validacao.md) registra o que falta comprovar. O pareamento de WhatsApp Web descrito em material anterior não equivale à API oficial nem estabelece uma integração neste kit.
 
-Revise `AGENTS.md`, os prompts e a matriz de permissões quando o fluxo mudar. Não coloque neste repositório documentos de clientes, conversas, segredos ou resultados reais. O arquivo `.gitignore` ajuda a evitar inclusão acidental, mas não substitui a revisão do que será enviado ao GitHub.
+## Continuidade da mentoria
+
+O diagnóstico e as conversas anteriores sugeriram começar por **um contrato**, adaptar o horizonte de planejamento ao tipo de obra e testar o fluxo com supervisão humana. Há evidência de sessões e de modelos LPS enviados; o [histórico](docs/06-historico-e-fontes.md) registra cada item com seu grau de comprovação. O kit atual é uma **preparação técnica local** e não comprova aceite, implantação, encerramento contratual ou quitação da mentoria anterior.
+
+## Referências úteis
+
+- [Proposta anterior compartilhada com Francisco](https://docs.google.com/document/d/1_T-Ddnb286hQ-FLREvBz66VoeabR9fkGprzHe4GXFvo/edit) — referência de escopo, sujeita a conciliação com o que foi efetivamente entregue.
+- [Notas da mentoria de 01/07](https://docs.google.com/document/d/1QTT_oX2nKkff3SGZR2rS2E0dCgk5inUIdOeevw72VR8/edit) — contexto para a adoção em blocos.
+- [Aplicativo ChatGPT para Windows](https://learn.chatgpt.com/docs/windows/windows-app), [primeiros passos](https://learn.chatgpt.com/docs/quickstart) e [instruções AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md) — documentação oficial para a ativação.
+
+**Uso e privacidade:** este repositório deve permanecer privado. Não coloque nele contratos reais, conversas, credenciais ou resultados de clientes. Toda leitura de conta, envio ou escrita em sistema requer permissão específica e revisão humana.

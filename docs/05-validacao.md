@@ -5,7 +5,7 @@
 - Arquivos de orientação e exemplo fictício preparados.
 - Fluxo de quatro papéis, quadro e minuta desenhados para revisão humana.
 - Documentação oficial do app Windows e `AGENTS.md` referenciada no README.
-- Revisão local: 20 arquivos, links internos existentes e nenhuma identificação de cliente, contato real ou credencial nos arquivos do kit.
+- Revisão local: 23 arquivos, incluindo capa conceitual e histórico com fontes. Links internos conferidos. Nenhum contrato real, contato pessoal ou credencial foi incluído no kit.
 
 ## Ainda não verificado
 
