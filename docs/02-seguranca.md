@@ -21,3 +21,4 @@ Antes de usar um contrato real, registre respostas para os itens abaixo fora des
 4. Não envie mensagens, edite sistemas ou aceite permissões amplas por iniciativa do agente. Revise texto, destinatários, anexos e efeito antes de autorizar.
 5. Mantenha documentos reais, tokens OAuth, cookies e arquivos de configuração de contas fora do GitHub. Verifique o conteúdo antes de qualquer commit.
 6. Se a conexão falhar, use entrada manual identificada como tal. Não descreva a simulação como captura automática.
+7. Organizar por contrato não autoriza mover, renomear ou criar pastas em um sistema externo. Primeiro liste os originais e confirme destino, permissões e versão. Qualquer automação futura deve evitar duplicatas e nunca sobrescrever silenciosamente uma fonte.

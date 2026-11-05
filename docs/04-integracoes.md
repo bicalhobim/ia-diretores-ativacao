@@ -10,6 +10,8 @@ Uma conexão feita no ambiente de demonstração não existe automaticamente na 
 | Google Agenda | Data fictícia no quadro | Conta aprovada, fuso e calendário conferidos; criação só após revisão | Não configurado |
 | WhatsApp | Copiar uma mensagem de teste e rotular como entrada manual | Confirmar canal autorizado, mecanismo suportado, consentimento, limites e teste; não presumir API oficial | Não configurado |
 | Dot/operação de telas | Mostrar no ambiente do facilitador com dados fictícios | Verificar disponibilidade na conta e no computador do usuário, permissões e limites por sistema | Não configurado |
+| NotebookLM | Nenhum uso necessário no exemplo | Confirmar se há notebook do contrato, conta, fontes, compartilhamento e utilidade frente ao quadro feito no Codex | Opcional; uso por Francisco não verificado |
+| Hermes | Nenhum uso necessário no exemplo | Exigiria verificação separada de implantação, canais, credenciais, permissões, logs e autorização | Não integra este piloto; uso por Francisco não verificado |
 
 ## Teste de cada conexão
 

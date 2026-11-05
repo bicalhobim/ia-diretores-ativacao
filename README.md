@@ -2,18 +2,18 @@
 
 **Um contrato. Fontes rastreáveis. Decisões sob controle do diretor.**
 
-![Diagrama conceitual IA para Diretores: fontes, organização, Dot e Codex, papéis de análise, resultados e aprovação do diretor](assets/capa-ia-diretores.png)
+![AI OS para Diretores: entradas autorizadas, organização por contrato, Codex, análise, revisão humana e acompanhamento](assets/capa-ai-os-diretores-revisada.png)
 
-> **Arquitetura proposta.** A imagem mostra a direção do produto, não conexões já instaladas. O piloto começa com arquivos fictícios e evolui para um contrato real somente após autorização de dados, acessos e responsáveis.
+> **Mapa didático, não implantação.** WhatsApp, e-mail e Google Drive aparecem como origens ou destino possíveis, ainda sem integração comprovada na conta de Francisco. NotebookLM é opcional se já existir e for autorizado. O piloto começa com arquivos fictícios locais; o diretor valida qualquer ação. A [capa anterior](assets/capa-ia-diretores.png) fica preservada como referência histórica.
 
 Este kit privado reúne o roteiro de ativação no Windows, instruções para Codex, papéis de análise, prompts reutilizáveis e um exercício seguro. Seu resultado pretendido é um **quadro semanal de uma página**: fato, fonte, restrição, impacto, responsável, prazo e próxima ação. Francisco revisa os fatos e aprova qualquer decisão ou comunicação antes da execução.
 
 ## Comece por aqui
 
-1. Leia [Ativação no Windows](docs/01-ativacao-windows.md) e [Segurança e permissões](docs/02-seguranca.md).
+1. Veja o [mapa do fluxo e dos sistemas](docs/08-fluxo-didatico.md), depois leia [Ativação no Windows](docs/01-ativacao-windows.md), [Governança](GOVERNANCA.md) e [Segurança e permissões](docs/02-seguranca.md).
 2. Abra esta pasta no Codex e confira as [instruções do projeto](AGENTS.md).
 3. Faça o [exercício com dados fictícios](docs/03-primeiro-piloto.md), começando pelo [prompt de início](prompts/01-inicio.md).
-4. Revise o resultado com o [modelo de quadro](modelos/quadro-semanal.md) e os [critérios de validação](docs/05-validacao.md).
+4. Revise o resultado com o [modelo de quadro](modelos/quadro-semanal.md), o [registro da rodada](modelos/registro-execucao.md) e os [critérios de validação](docs/05-validacao.md).
 5. Só então escolha um contrato e confira as permissões na [matriz de integrações](docs/04-integracoes.md).
 
 | No kit | Finalidade |
@@ -23,12 +23,13 @@ Este kit privado reúne o roteiro de ativação no Windows, instruções para Co
 | [Exemplo fictício](exemplos/contrato-ficticio.md) | Ensaiar sem documentos de clientes ou contas conectadas |
 | [Histórico e fontes](docs/06-historico-e-fontes.md) | Distinguir o que foi apresentado, enviado, desenvolvido e ainda não comprovado |
 | [Relatório de trabalho](docs/07-relatorio-de-trabalho.md) | Revisar o avanço e as pendências antes de tratar a entrega como concluída |
+| [Mapa didático](docs/08-fluxo-didatico.md) | Explicar o caminho das fontes até a decisão e os limites de cada sistema |
 
 ## Estado em 05/11/2026
 
 | Componente | Estado verificável |
 | --- | --- |
-| Roteiro, prompts e exemplo | Preparados e revisados localmente; o exercício ainda depende de execução com o usuário |
+| Roteiro, prompts e exemplos | Preparados e revisados localmente; o exercício ainda depende de execução com o usuário |
 | Papéis de análise | Definidos como instruções; não são agentes autônomos implantados |
 | Arquivos locais fictícios | Prontos para ensaio, sem acesso a contas |
 | Google Drive, Gmail e Agenda | Não configurados nem testados na conta de Francisco |
