@@ -1,0 +1,19 @@
+# Dados locais e credenciais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*secret*.json
+*token*.json
+*credentials*.json
+*.sqlite
+*.db
+dados-reais/
+entradas-reais/
+saidas-reais/
+logs/
+tmp/
+__pycache__/
+.pytest_cache/
+.codex/
