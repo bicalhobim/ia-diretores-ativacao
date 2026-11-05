@@ -2,9 +2,9 @@
 
 ## Exercício seguro
 
-Use apenas `exemplos/contrato-ficticio.md`, `exemplos/mensagem-ficticia.md` e `exemplos/matriz-responsaveis-ficticia.csv`. Os nomes, valores e datas são inventados.
+Use apenas `exemplos/contrato-ficticio.md`, `exemplos/reporte-gerente-ficticio.md`, `exemplos/mensagem-ficticia.md` e `exemplos/matriz-responsaveis-ficticia.csv`. Os nomes, valores e datas são inventados. Consulte o [mapa visual do fluxo](08-fluxo-didatico.md) para distinguir a demonstração das conexões futuras.
 
-1. Abra os três arquivos e rode `prompts/01-inicio.md`.
+1. Abra os quatro arquivos e rode `prompts/01-inicio.md`.
 2. Execute `prompts/02-quadro.md` para preencher `modelos/quadro-semanal.md`.
 3. Confira manualmente cada citação e cada data no arquivo de origem.
 4. Execute `prompts/03-minuta.md`. O resultado deve permanecer como **rascunho**, sem envio.
@@ -12,7 +12,7 @@ Use apenas `exemplos/contrato-ficticio.md`, `exemplos/mensagem-ficticia.md` e `e
 
 ## Resultado esperado do exemplo
 
-O contrato fictício prevê entrega de um material em 18/11/2026. A mensagem fictícia informa risco de atraso e pede confirmação até 12/11/2026. O quadro deve distinguir o prazo contratual do prazo de resposta e indicar que o impacto ainda requer validação. A matriz fictícia identifica quem acompanha a restrição, mas não autoriza disparo automático de cobrança.
+O contrato fictício prevê o marco M1 em 18/11/2026. O reporte do gerente descreve a OS-17 de instalação e a disponibilidade não confirmada de 40 luminárias; a mensagem fictícia pede confirmação até 12/11/2026. O quadro deve distinguir o marco do prazo de resposta e indicar que o impacto ainda requer validação. A matriz fictícia identifica quem acompanha a restrição, mas não autoriza disparo automático de cobrança.
 
 ## Entrada gradual em dados reais
 
